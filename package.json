@@ -1,0 +1,25 @@
+{
+  "name": "sillystring",
+  "version": "0.0.0",
+  "description": "Generate a silly string.",
+  "main": "index.js",
+  "bin": {
+    "sillystring": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stephenplusplus/sillystring"
+  },
+  "keywords": [
+    "sillystring"
+  ],
+  "author": "Stephen Sawchuk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephenplusplus/sillystring/issues"
+  },
+  "homepage": "https://github.com/stephenplusplus/sillystring",
+  "dependencies": {
+    "minimist": "^0.1.0"
+  }
+}
