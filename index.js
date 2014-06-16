@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function () {
-  return getRandomPeople(getRandomNumberBetween(1, 2));
+  return getRandomPeople(getRandomNumberBetween(3, 4));
 };
 
 // big word. not sure it's right.
@@ -32,7 +32,6 @@ var adjective = [
   'hissing',
   'likeable',
   'loving',
-  'mannered',
   'mature',
   'only',
   'polyester',
@@ -42,7 +41,7 @@ var adjective = [
   'tiny',
   'twenty-seven year old',
   'weak',
-  'well-made',
+  'well-mannered',
   'wooden'
 ];
 adjective.random = getRandomizer(adjective);
@@ -116,7 +115,7 @@ function getRandomPeople(howManyPeople) {
   if (people.length === 1) return getRandomPerson();
 
   return people.reduce(function (string, person, index) {
-    if (index === people.length - 1) string += ', and ';
+    if (index === people.length - 1) string += (people.length > 2 ? ',' : '') + ' and ';
     else if (index > 0) string += ', ';
     return string + person;
   }, '');
