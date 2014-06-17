@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/stephenplusplus/sillystring",
   "dependencies": {
-    "minimist": "^0.1.0"
+    "minimist": "^0.1.0",
+    "taketalk": "^0.1.0"
   }
 }
